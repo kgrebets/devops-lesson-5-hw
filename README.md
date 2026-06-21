@@ -21,7 +21,6 @@ The infrastructure includes:
 ├── backend.tf
 ├── main.tf
 ├── outputs.tf
-├── provider.tf
 ├── variables.tf
 │
 ├── modules
