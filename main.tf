@@ -1,3 +1,16 @@
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 6.51"
+    }
+  }
+}
+
+provider "aws" {
+  region = "us-east-2"
+}
+
 # Підключаємо модуль S3 та DynamoDB
 module "s3_backend" {
   source = "./modules/s3-backend"
